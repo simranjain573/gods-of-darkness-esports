@@ -10,19 +10,9 @@ const makeToken = (payload) => jwt.sign(payload, process.env.JWT_SECRET, { expir
 
 router.post('/signup', async (req, res) => {
   try {
-    const {
-      fullName,
-      age,
-      email,
-      username,
-      password,
-      gameSelection,
-      gameId,
-      ign,
-      characterName
-    } = req.body;
+    const { fullName, age, email, username, password, gameSelection, gameId, ign } = req.body;
 
-    if (!fullName || !age || !password || !gameSelection || !gameId || !ign || !characterName) {
+    if (!fullName || !age || !password || !gameSelection || !gameId || !ign) {
       return res.status(400).json({ message: 'Please fill all required fields' });
     }
 
@@ -43,8 +33,7 @@ router.post('/signup', async (req, res) => {
       password: hashed,
       gameSelection,
       gameId,
-      ign,
-      characterName
+      ign
     });
 
     const token = makeToken({ id: user._id, isAdmin: user.isAdmin });

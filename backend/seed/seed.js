@@ -29,7 +29,6 @@ await User.create({
   gameSelection: 'BGMI',
   gameId: 'BGMI9988',
   ign: 'DarkFury',
-  characterName: 'Revenant',
   leaderboardPoints: 1200,
   matchHistory: [
     { game: 'BGMI', position: '#1', score: 32, date: new Date('2026-03-15') }

@@ -11,8 +11,7 @@ const initial = {
   password: '',
   gameSelection: 'BGMI',
   gameId: '',
-  ign: '',
-  characterName: ''
+  ign: ''
 };
 
 export default function AuthPage() {
@@ -59,8 +58,7 @@ export default function AuthPage() {
               <option>BGMI</option><option>Valorant</option><option>Free Fire</option><option>CS2</option>
             </select>
             <input className="rounded bg-white/10 p-2" placeholder="Game ID" value={form.gameId} onChange={(e) => setForm({ ...form, gameId: e.target.value })} required />
-            <input className="rounded bg-white/10 p-2" placeholder="In-game name (IGN)" value={form.ign} onChange={(e) => setForm({ ...form, ign: e.target.value })} required />
-            <input className="rounded bg-white/10 p-2" placeholder="Character name" value={form.characterName} onChange={(e) => setForm({ ...form, characterName: e.target.value })} required />
+            <input className="rounded bg-white/10 p-2 md:col-span-2" placeholder="In-game name (IGN) / Character name" value={form.ign} onChange={(e) => setForm({ ...form, ign: e.target.value })} required />
           </>
         )}
 

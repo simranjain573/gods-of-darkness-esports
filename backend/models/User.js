@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema(
     gameSelection: { type: String, required: true },
     gameId: { type: String, required: true },
     ign: { type: String, required: true },
-    characterName: { type: String, required: true },
     role: { type: String, default: 'Player' },
     socialLinks: {
       instagram: String,
