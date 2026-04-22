@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="space-y-10">
       <section className="glow rounded-2xl border border-neonPurple/30 bg-black/40 p-8 text-center">
         <h1 className="mb-3 text-4xl font-extrabold md:text-6xl">Gods of Darkness</h1>
-        <p className="text-xl text-neonBlue">Rise from Darkness</p>
+        <p className="text-xl text-neonBlue">#LETSGETSTARTED</p>
         <p className="mx-auto mt-4 max-w-2xl text-gray-300">
           Elite esports organization forging champions across battle royale and tactical shooters.
         </p>
