@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-darkBase text-white;
+  @apply bg-white text-black;
   font-family: Inter, system-ui, sans-serif;
 }
 
