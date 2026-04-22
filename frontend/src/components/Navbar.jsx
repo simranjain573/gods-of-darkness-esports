@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-20 border-b border-purple-800/40 bg-black/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link to="/" className="text-xl font-bold text-slate-900">
+        <Link to="/" className="text-xl font-bold text-red-600">
           GODS OF DARKNESS
         </Link>
         <div className="flex flex-wrap items-center gap-3 text-sm">
