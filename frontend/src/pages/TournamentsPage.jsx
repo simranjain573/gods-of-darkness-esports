@@ -1,3 +1,4 @@
+// frontend/src/pages/TournamentsPage.jsx
 import { useEffect, useState } from 'react';
 import api from '../api';
 import Loader from '../components/Loader';
@@ -24,18 +25,18 @@ export default function TournamentsPage() {
 
   return (
     <div>
-      <h2 className="mb-4 text-3xl font-bold">Upcoming Tournaments</h2>
+      <h2 className="mb-4 text-3xl font-black uppercase tracking-[0.08em] text-white">Upcoming Tournaments</h2>
       <div className="grid gap-4 md:grid-cols-2">
         {list.map((t) => (
-          <div key={t._id} className="rounded-xl border border-white/10 bg-white/5 p-4">
-            <h3 className="text-xl font-semibold">{t.gameName}</h3>
-            <p>{new Date(t.date).toLocaleDateString()}</p>
-            <p>Entry: ${t.entryFee} | Max Players: {t.maxPlayers}</p>
-            <button onClick={() => join(t._id)} className="mt-3 rounded bg-neonBlue px-3 py-2 text-black">Join Tournament</button>
+          <div key={t._id} className="rounded-xl border border-white/10 bg-[#1a1a1a] p-4 shadow-[0_10px_28px_rgba(0,0,0,0.3)]">
+            <h3 className="text-xl font-semibold text-white">{t.gameName}</h3>
+            <p className="text-zinc-300">{new Date(t.date).toLocaleDateString()}</p>
+            <p className="text-zinc-300">Entry: ${t.entryFee} | Max Players: {t.maxPlayers}</p>
+            <button onClick={() => join(t._id)} className="mt-3 rounded-lg border border-[#FF3B3B]/45 bg-[#D61F1F] px-3 py-2 text-white hover:bg-[#b81a1a]">Join Tournament</button>
           </div>
         ))}
       </div>
-      {msg && <p className="mt-4">{msg}</p>}
+      {msg && <p className="mt-4 text-zinc-200">{msg}</p>}
     </div>
   );
 }
