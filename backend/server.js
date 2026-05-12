@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
@@ -21,6 +22,9 @@ app.use(morgan('dev'));
 app.get('/', (_req, res) => {
   res.json({ message: 'Gods of Darkness Esports API running' });
 });
+
+const mediaPath = path.join(process.cwd(), '/', 'media');
+app.use('/media', express.static(mediaPath));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);

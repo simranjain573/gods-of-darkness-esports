@@ -8,6 +8,8 @@ export default function StorePage() {
   const [checkout, setCheckout] = useState({ name: '', address: '', phone: '' });
   const [msg, setMsg] = useState('');
 
+  const BASE_URL = 'http://localhost:5000'; // Backend base URL
+
   useEffect(() => {
     api.get('/products').then((res) => setProducts(res.data)).catch(() => setMsg('Failed to load products'));
   }, []);
@@ -29,7 +31,11 @@ export default function StorePage() {
       <div className="grid gap-4 md:grid-cols-3">
         {products.map((p) => (
           <div key={p._id} className="rounded-xl border border-white/10 bg-[#171717] p-4">
-            <img src={p.image} alt={p.name} className="h-40 w-full rounded object-cover" />
+            <img
+              src={p.image.startsWith('http') ? p.image : `${BASE_URL}${p.image}`}
+              alt={p.name}
+              className="h-40 w-full rounded object-contain"
+            />
             <h3 className="mt-2 text-lg font-semibold text-white">{p.name}</h3>
             <p className="text-sm text-zinc-300">{p.description}</p>
             <p className="mt-1 font-bold text-red-300">Rs. {p.price}</p>

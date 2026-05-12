@@ -54,25 +54,74 @@ await Tournament.insertMany([
 
 await Product.insertMany([
   {
-    name: 'Gods of Darkness Jersey',
-    description: 'Official pro jersey',
-    price: 49,
-    category: 'Jersey',
-    image: 'https://images.unsplash.com/photo-1517467139951-f5a925c9f9de?auto=format&fit=crop&w=600&q=80'
+    "name": "GOD Esports Shadow Backpack",
+    "description": "Stylish and spacious backpack for gaming, college, and travel.",
+    "price": 1499,
+    "category": "Accessory",
+    "image": "/media/backpack.jpeg"
   },
   {
-    name: 'Nightfall Hoodie',
-    description: 'Premium esports hoodie',
-    price: 59,
-    category: 'Hoodie',
-    image: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=600&q=80'
+    "name": "GOD Esports Phantom Steel Bottle",
+    "description": "Durable steel bottle with a sleek esports design.",
+    "price": 699,
+    "category": "Accessory",
+    "image": "/media/steel_bottle.jpeg"
   },
   {
-    name: 'Stealth Mousepad',
-    description: 'Speed surface XL',
-    price: 19,
-    category: 'Accessory',
-    image: 'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=600&q=80'
+    "name": "GOD Esports Reaper Keychain",
+    "description": "Compact esports keychain with premium reaper design.",
+    "price": 249,
+    "category": "Accessory",
+    "image": "/media/keychain.jpeg"
+  },
+  {
+    "name": "GOD Esports Ultimate Sticker Pack",
+    "description": "Waterproof gaming stickers for laptops and accessories.",
+    "price": 199,
+    "category": "Accessory",
+    "image": "/media/stickers.jpeg"
+  },
+  {
+    "name": "GOD Esports Gaming Mouse Pad",
+    "description": "Smooth and durable mouse pad for gaming and work.",
+    "price": 499,
+    "category": "Accessory",
+    "image": "/media/mousepad.jpeg"
+  },
+  {
+    "name": "GOD Esports Pro Jersey",
+    "description": "Lightweight esports jersey with a premium sporty look.",
+    "price": 999,
+    "category": "Jersey",
+    "image": "/media/esport_jersey.jpeg"
+  },
+  {
+    "name": "GOD Esports High-Top Sneakers",
+    "description": "Stylish high-top sneakers with bold esports branding.",
+    "price": 2199,
+    "category": "Accessory",
+    "image": "/media/shoes.jpeg"
+  },
+  {
+    "name": "GOD Esports Shadow Cap",
+    "description": "Comfortable adjustable cap with minimalist esports style.",
+    "price": 599,
+    "category": "Accessory",
+    "image": "/media/cap.jpeg"
+  },
+  {
+    "name": "GOD Esports Classic T-Shirt",
+    "description": "Soft cotton t-shirt with clean GOD Esports branding.",
+    "price": 799,
+    "category": "Accessory",
+    "image": "/media/jersey.jpeg"
+  },
+  {
+    "name": "GOD Esports Phantom Hoodie",
+    "description": "Premium hoodie designed for comfort and gaming style.",
+    "price": 1799,
+    "category": "Hoodie",
+    "image": "/media/hoodie.jpeg"
   }
 ]);
 
